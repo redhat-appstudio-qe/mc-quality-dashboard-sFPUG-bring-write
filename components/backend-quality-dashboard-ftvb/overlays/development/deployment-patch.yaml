@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-ftvb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-udvy-tenant/mc-quality-dashboard/backend-quality-dashboard-ftvb@sha256:9dee0b1523c7f931f3ea572ec6313285502a36a2ae82e18e4e279f867db5a1f0
+        name: container-image
+        resources: {}
+status: {}
