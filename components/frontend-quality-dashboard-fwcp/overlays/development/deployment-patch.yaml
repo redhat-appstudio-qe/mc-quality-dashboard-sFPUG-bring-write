@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-fwcp
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/multi-comp-e2e-udvy-tenant/mc-quality-dashboard/frontend-quality-dashboard-fwcp@sha256:4972c9cf685ee6aea420c910d1233f7894219c4d4492073533a890a81292af75
+        name: container-image
+        resources: {}
+status: {}
